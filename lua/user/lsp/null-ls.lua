@@ -16,10 +16,18 @@ null_ls.setup {
       extra_filetypes = { "toml" },
       extra_args = { "--tab-width", "2", "--single-quote", "false" },
     },
-    formatting.black.with { extra_args = { "--fast" } },
+    formatting.isort,
+    formatting.black.with { extra_args = { "--fast", "--line-length", "127"} },
+    diagnostics.flake8.with {
+      extra_args = {
+        "--ignore=E203,W605,W503",
+        "--max-line-length=127",
+        "--max-complexity=16",
+        "--execlude=.git,__pycache__,__init__.py,.mypy_cache,.pytest_cache"
+      }
+    },
     formatting.stylua,
     formatting.google_java_format,
-    diagnostics.flake8,
     formatting.rustfmt,
   },
 }
