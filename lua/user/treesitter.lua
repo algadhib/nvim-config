@@ -1,17 +1,17 @@
 local M = {
   "nvim-treesitter/nvim-treesitter",
-  commit = "226c1475a46a2ef6d840af9caa0117a439465500",
+  commit = "42fc28ba918343ebfd5565147a42a26580579482",
   event = "BufReadPost",
   dependencies = {
-    {
-      "JoosepAlviste/nvim-ts-context-commentstring",
-      event = "VeryLazy",
-      commit = "729d83ecb990dc2b30272833c213cc6d49ed5214",
-    },
+    -- {
+    --   "JoosepAlviste/nvim-ts-context-commentstring",
+    --   event = "VeryLazy",
+    --   commit = "1b212c2eee76d787bbea6aa5e92a2b534e7b4f8f",
+    -- },
     {
       "nvim-tree/nvim-web-devicons",
       event = "VeryLazy",
-      commit = "0568104bf8d0c3ab16395433fcc5c1638efc25d4"
+      commit = "0422a19d9aa3aad2c7e5cca167e5407b13407a9d"
     },
   },
 }
@@ -34,10 +34,10 @@ function M.config()
     },
     indent = { enable = true, disable = { "python", "css" } },
 
-    context_commentstring = {
-      enable = true,
-      enable_autocmd = false,
-    },
+    -- context_commentstring = {
+    --   enable = true,
+    --   enable_autocmd = false,
+    -- },
   }
 end
 

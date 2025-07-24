@@ -1,6 +1,6 @@
 local M = {
   "mfussenegger/nvim-dap",
-  commit = "6b12294a57001d994022df8acbe2ef7327d30587",
+  commit = "6a5bba0ddea5d419a783e170c20988046376090d",
   event = "VeryLazy",
 }
 

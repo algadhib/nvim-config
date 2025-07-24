@@ -1,11 +1,11 @@
 local M = {
-  "jose-elias-alvarez/null-ls.nvim",
+  "nvimtools/none-ls.nvim",
   event = "BufReadPre",
-  commit = "60b4a7167c79c7d04d1ff48b55f2235bf58158a7",
+  commit = "103b0926a31be1bc95743c6328cee309768f0a88",
   dependencies = {
     {
       "nvim-lua/plenary.nvim",
-      commit = "9a0d3bf7b832818c042aaf30f692b081ddd58bd9",
+      commit = "857c5ac632080dba10aae49dba902ce3abf91b35",
       lazy = true,
     },
   },
@@ -29,14 +29,14 @@ function M.config()
       formatting.black.with { extra_args = { "--fast", "--line-length", "127"} },
       formatting.stylua,
       formatting.google_java_format,
-      diagnostics.flake8.with {
-        extra_args = {
-          "--ignore=E203,W605,W503",
-          "--max-line-length=127",
-          "--max-complexity=16",
-          "--execlude=.git,__pycache__,__init__.py,.mypy_cache,.pytest_cache"
-        },
-      },
+      -- diagnostics.flake8.with {
+      --   extra_args = {
+      --     "--ignore=E203,W605,W503",
+      --     "--max-line-length=127",
+      --     "--max-complexity=16",
+      --     "--execlude=.git,__pycache__,__init__.py,.mypy_cache,.pytest_cache"
+      --   },
+      -- },
       formatting.rustfmt,
     },
   }

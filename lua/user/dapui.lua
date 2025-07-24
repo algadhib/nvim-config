@@ -1,11 +1,16 @@
 local M = {
   "rcarriga/nvim-dap-ui",
-  commit = "1cd4764221c91686dcf4d6b62d7a7b2d112e0b13",
+  commit = "f7d75cca202b52a60c520ec7b1ec3414d6e77b0f",
   event = "VeryLazy",
   dependencies = {
     {
       "mfussenegger/nvim-dap",
-      commit = "6b12294a57001d994022df8acbe2ef7327d30587",
+      commit = "6a5bba0ddea5d419a783e170c20988046376090d",
+      event = "VeryLazy",
+    },
+    {
+      "nvim-neotest/nvim-nio",
+      commit = "21f5324bfac14e22ba26553caf69ec76ae8a7662",
       event = "VeryLazy",
     },
   },
